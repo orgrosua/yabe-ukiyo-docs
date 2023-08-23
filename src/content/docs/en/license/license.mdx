@@ -1,0 +1,56 @@
+---
+title: License
+description: 'Manage the license for Bricks template libraries'
+i18nReady: false
+---
+
+Bricks' [**Template Library**](https://academy.bricksbuilder.io/article/template-library/) feature lets you browse and insert templates of another Bricks installation. Public access to your templates is disabled by default.
+When enabled, you can [protect the access](https://academy.bricksbuilder.io/article/remote-templates/#:~:text=it%20is%20recommended%20to%20restrict%20access%20by%20whitelisting%20urls%20and%2For%20password%20protection) to your templates by requiring a password or whitelist the URLs.
+
+Yabe Ukiyo's license system is an additional layer on top of Bricks' Template Library system. It serves as a thin middleware that allows the use of Yabe Ukiyo's license system as a password to access the template libraries on the current WordPress installation. 
+
+## Adding a license
+
+### Step 1: Add new license
+
+Go to **Bricks → Yabe Ukiyo** and click the **Add New** button.
+
+<a data-fslightbox href="/tutorial/license/license/1.png">
+![Add new license to yabe ukiyo](/tutorial/license/license/1.png)
+</a>
+
+### Step 2: Provide license details
+
+<a data-fslightbox href="/tutorial/license/license/2.png">
+![Adding license details](/tutorial/license/license/2.png)
+</a>
+
+1. Give the title of the license. This is for your reference.
+
+2. (Optional) fill in the **Max activations** field with the maximum number of sites allowed to access the design set using the current license. Leave it blank to allow unlimited activations. 
+
+3. (Optional) fill the **Expired at** field with the date when the license will expire. To allow the license to be used indefinitely, leave it blank.
+
+4. (Optional) select the user that will be assigned to the license. This is useful to track which user is using the license. Leave it blank if you don't want to assign the license to any user.
+
+and finally, click the **Save** button.
+
+### Step 3: Copy the license key
+
+On the license list, double click the the masked license key to reveal the license key.
+
+<a data-fslightbox href="/tutorial/license/license/3.png">
+![Copy the license key](/tutorial/license/license/3.png)
+</a>
+
+The license key is compatible with Bricks' Template Library system so the other WordPress installation can use it to fill the "Remote Templates Password" field on the **Bricks → Settings** page under the **Templates** tab.
+
+<a data-fslightbox href="/tutorial/license/license/4.png">
+![Enable 3rd party design sets](/tutorial/license/license/4.png)
+</a>
+
+You also can click the <code><i class="fa-regular fa-clipboard"></i></code> icon to copy the **Token** to your clipboard that can be used to auto-fill the [Remote](../remote/#step-2-provide-remote-details) section.
+
+<a data-fslightbox href="/tutorial/license/license/5.png">
+![Copy the Token](/tutorial/license/license/5.png)
+</a>
