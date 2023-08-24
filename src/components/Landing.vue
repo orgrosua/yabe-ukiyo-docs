@@ -28,7 +28,7 @@
                     <a href="https://rosua.org/checkout/order-history" class="px:15 bg:blue-90:hover py:8:hover r:8">Account</a>
                 </div>
                 <div class="flex align-items:center">
-                    <a href="https://www.dropbox.com/scl/fi/1scslfso9tc1th1xl2f5g/yabe-ukiyo-1.0.1.zip?rlkey=yzrtoks9e4tlgtfzqpw7ua88l&dl=1" class="px:12 py:8 r:8 bg:green bg:green-40:hover fg:white">Get Yabe Ukiyo</a>
+                    <a href="https://www.dropbox.com/scl/fi/xz8odazclmb09xvlhu689/yabe-ukiyo-1.0.2.zip?rlkey=w1ftubne7nrpmppjq6fvqmlm1&dl=1" class="px:12 py:8 r:8 bg:green bg:green-40:hover fg:white">Get Yabe Ukiyo</a>
                 </div>
             </nav>
             <div class="">
@@ -519,10 +519,10 @@ const wp_v10 = ref({
     downloaded: 1,
 });
 const wp_v12 = ref({
-    version: '1.0.1',
+    version: '1.0.2',
     active_installs: 1,
     donate_link: 'https://ko-fi.com/Q5Q75XSF7',
-    download_link: 'https://www.dropbox.com/scl/fi/1scslfso9tc1th1xl2f5g/yabe-ukiyo-1.0.1.zip?rlkey=yzrtoks9e4tlgtfzqpw7ua88l&dl=1',
+    download_link: 'https://www.dropbox.com/scl/fi/xz8odazclmb09xvlhu689/yabe-ukiyo-1.0.2.zip?rlkey=w1ftubne7nrpmppjq6fvqmlm1&dl=1',
 });
 
 const HIGHLIGHTED_FEATURES = [
@@ -627,7 +627,7 @@ const PRICING = [
         ],
         purchaseButton: {
             text: 'Download',
-            url: 'https://www.dropbox.com/scl/fi/1scslfso9tc1th1xl2f5g/yabe-ukiyo-1.0.1.zip?rlkey=yzrtoks9e4tlgtfzqpw7ua88l&dl=1',
+            url: 'https://www.dropbox.com/scl/fi/xz8odazclmb09xvlhu689/yabe-ukiyo-1.0.2.zip?rlkey=w1ftubne7nrpmppjq6fvqmlm1&dl=1',
         },
     },
     {
