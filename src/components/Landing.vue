@@ -704,7 +704,7 @@ const PRICING = [
         subtitle: 'Best for blogger, individual & solopreneur',
         features: [
             'All features',
-            'All integrations',
+            'All e-commerce integrations',
             {
                 icon: 'fa-regular fa-planet-ringed',
                 text: 'Unlimited personal sites'
@@ -729,7 +729,7 @@ const PRICING = [
         subtitle: 'Perfect For Agency Owners with high volume',
         features: [
             'All features',
-            'All integrations',
+            'All e-commerce integrations',
             {
                 icon: 'fa-regular fa-planet-ringed',
                 text: 'Unlimited personal sites'
