@@ -365,9 +365,20 @@
         <!-- Pricing -->
         <div id="pricing" class="block-pricing max-w:xl flex flex:column my:60 mx:20 mx:30@sm mx:40@md mx:auto@xl">
 
-            <div class="flex flex:column align-items:center mb:16">
+            <!-- <div class="flex flex:column align-items:center mb:16">
                 <div class="px:16 py:6 r:8 bg:crimson-95 fg:crimson-55 b:1|solid|crimson-65 text:center font:medium ls:2 lh:1.5">
                     <i class="fa-solid fa-gift fg:crimson pr:6"></i> <span class="ls:1 font:bold">50% off</span> until <span class="ls:1 font:bold">Sept 1</span>, with code: <code class="font:extrabold bg:white">EARTH-FOREST</code>
+                </div>
+            </div> -->
+            <div class="flex flex:column align-items:center mb:16">
+                <div class="px:16 py:6 r:8 bg:crimson-95 fg:crimson-55 b:1|solid|crimson-65 text:center font:medium ls:2 lh:1.5">
+                    <!-- <i class="fa-solid fa-gift fg:crimson pr:6"></i> [{{ countdown_offer}}] Limited time offer: <span class="ls:1 font:bold">One-time-payment (LTD) plan</span> -->
+                    <i class="fa-solid fa-gift fg:crimson pr:6"></i> [
+                        <b>{{ countdown_offer.days }}</b>d 
+                        <b>{{ countdown_offer.hours }}</b>h 
+                        <b>{{ countdown_offer.minutes }}</b>m 
+                        <b>{{ countdown_offer.seconds }}</b>s 
+                    ] Limited time offer: <span class="ls:1 font:bold">One-time-payment (LTD) plan</span>
                 </div>
             </div>
 
@@ -381,7 +392,7 @@
                 </p>
             </div>
 
-            <!-- <div class="flex justify-content:center my:30">
+            <div class="flex justify-content:center my:30">
                 <fieldset class="grid-cols:2 gap-x:4 rounded p:4 text:center f:14 font:semibold lh:1.6 box-shadow:rgb(255,255,255)|0px|0px|0px|0px|inset,rgb(229,231,235)|0px|0px|0px|1px|inset,rgba(0,0,0,0)|0px|0px|0px|0px">
                     <legend class="sr-only">Payment frequency</legend>
                     <label @click="selectedPricingDuration = 'year'" :class="[selectedPricingDuration === 'year' ? 'bg:blue fg:white' : 'fg:gray-40 bg:blue/.1:hover']" class="cursor:pointer rounded px:10 py:4">
@@ -393,7 +404,7 @@
                         <span>One-time</span>
                     </label>
                 </fieldset>
-            </div> -->
+            </div>
 
             <div class="my:15"></div>
 
@@ -684,60 +695,60 @@ const PRICING = [
         ],
         purchaseButton: { url: 'https://rosua.org/checkout/?edd_action=add_to_cart&download_id=1404&edd_options[price_id]=2' },
     },
-    // {
-    //     duration: 'one-time',
-    //     amount: 79,
-    //     isMostPopular: false,
-    //     isEmphasized: false,
-    //     title: 'Personal',
-    //     subtitle: 'Best for blogger, individual & solopreneur',
-    //     features: [
-    //         'All features',
-    //         'All integrations',
-    //         {
-    //             icon: 'fa-regular fa-planet-ringed',
-    //             text: 'Unlimited personal sites'
-    //         },
-    //         {
-    //             icon: 'fa-solid fa-rotate',
-    //             text: 'Free updates'
-    //         },
-    //         {
-    //             icon: 'fa-solid fa-headset',
-    //             text: 'Standard support (first year)'
-    //         },
-    //     ],
-    //     purchaseButton: { url: 'https://rosua.org/checkout/?edd_action=add_to_cart&download_id=1404&edd_options[price_id]=3' },
-    // },
-    // {
-    //     duration: 'one-time',
-    //     amount: 159,
-    //     isMostPopular: false,
-    //     isEmphasized: true,
-    //     title: 'Agency',
-    //     subtitle: 'Perfect For Agency Owners with high volume',
-    //     features: [
-    //         'All features',
-    //         'All integrations',
-    //         {
-    //             icon: 'fa-regular fa-planet-ringed',
-    //             text: 'Unlimited personal sites'
-    //         },
-    //         {
-    //             icon: 'fa-regular fa-planet-ringed',
-    //             text: 'Unlimited client sites'
-    //         },
-    //         {
-    //             icon: 'fa-solid fa-rotate',
-    //             text: 'Free updates'
-    //         },
-    //         {
-    //             icon: 'fa-solid fa-headset',
-    //             text: 'Standard support (first year)'
-    //         },
-    //     ],
-    //     purchaseButton: { url: 'https://rosua.org/checkout/?edd_action=add_to_cart&download_id=1404&edd_options[price_id]=4' },
-    // },
+    {
+        duration: 'one-time',
+        amount: 79,
+        isMostPopular: false,
+        isEmphasized: false,
+        title: 'Personal',
+        subtitle: 'Best for blogger, individual & solopreneur',
+        features: [
+            'All features',
+            'All integrations',
+            {
+                icon: 'fa-regular fa-planet-ringed',
+                text: 'Unlimited personal sites'
+            },
+            {
+                icon: 'fa-solid fa-rotate',
+                text: 'Free updates'
+            },
+            {
+                icon: 'fa-solid fa-headset',
+                text: 'Standard support (first year)'
+            },
+        ],
+        purchaseButton: { url: 'https://rosua.org/checkout/?edd_action=add_to_cart&download_id=1404&edd_options[price_id]=3' },
+    },
+    {
+        duration: 'one-time',
+        amount: 159,
+        isMostPopular: false,
+        isEmphasized: true,
+        title: 'Agency',
+        subtitle: 'Perfect For Agency Owners with high volume',
+        features: [
+            'All features',
+            'All integrations',
+            {
+                icon: 'fa-regular fa-planet-ringed',
+                text: 'Unlimited personal sites'
+            },
+            {
+                icon: 'fa-regular fa-planet-ringed',
+                text: 'Unlimited client sites'
+            },
+            {
+                icon: 'fa-solid fa-rotate',
+                text: 'Free updates'
+            },
+            {
+                icon: 'fa-solid fa-headset',
+                text: 'Standard support (first year)'
+            },
+        ],
+        purchaseButton: { url: 'https://rosua.org/checkout/?edd_action=add_to_cart&download_id=1404&edd_options[price_id]=4' },
+    },
 ];
 
 const selectedFeatureIndex = ref(0);
@@ -863,6 +874,31 @@ onMounted(() => {
     // Refresh the lightbox when the DOM is ready
     window.refreshFsLightbox();
 });
+
+// countdown offer, until Sept 4, 2023
+const offer_end_date = new Date('2023-09-04T00:00:00');
+const current_date = new ref(new Date());
+
+setInterval(() => {
+    current_date.value = new Date();
+}, 1000);
+
+const countdown_offer = computed(() => {
+    const diff = offer_end_date - current_date.value;
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    return {
+        days,
+        hours,
+        minutes,
+        seconds,
+    };
+});
+
 </script>
 
 <style lang="scss">
