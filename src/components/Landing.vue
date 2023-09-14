@@ -402,14 +402,14 @@
         <!-- Pricing -->
         <div id="pricing" class="block-pricing max-w:xl flex flex:column my:60 mx:20 mx:30@sm mx:40@md mx:auto@xl">
 
+            <!-- Offer -->
             <!-- <div class="flex flex:column align-items:center mb:16">
                 <div class="px:16 py:6 r:8 bg:crimson-95 fg:crimson-55 b:1|solid|crimson-65 text:center font:medium ls:2 lh:1.5">
                     <i class="fa-solid fa-gift fg:crimson pr:6"></i> <span class="ls:1 font:bold">50% off</span> until <span class="ls:1 font:bold">Sept 1</span>, with code: <code class="font:extrabold bg:white">EARTH-FOREST</code>
                 </div>
             </div> -->
-            <div class="flex flex:column align-items:center mb:16">
+            <!-- <div class="flex flex:column align-items:center mb:16">
                 <div class="px:16 py:6 r:8 bg:crimson-95 fg:crimson-55 b:1|solid|crimson-65 text:center font:medium ls:2 lh:1.5">
-                    <!-- <i class="fa-solid fa-gift fg:crimson pr:6"></i> [{{ countdown_offer}}] Limited time offer: <span class="ls:1 font:bold">One-time-payment (LTD) plan</span> -->
                     <i class="fa-solid fa-gift fg:crimson pr:6"></i> [
                     <b>{{ countdown_offer.days }}</b>d
                     <b>{{ countdown_offer.hours }}</b>h
@@ -417,7 +417,7 @@
                     <b>{{ countdown_offer.seconds }}</b>s
                     ] Limited time offer: <span class="ls:1 font:bold">One-time-payment (LTD) plan</span>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Title -->
             <h2 class="mb:22 f:36 font:semibold text:center">Pricing</h2>
@@ -436,10 +436,10 @@
                         <input type="radio" name="frequency" value="annually" class="sr-only">
                         <span>Annually</span>
                     </label>
-                    <label @click="selectedPricingDuration = 'one-time'" :class="[selectedPricingDuration === 'one-time' ? 'bg:blue fg:white' : 'fg:gray-40  bg:blue/.1:hover']" class="cursor:pointer rounded px:10 py:4">
+                    <!-- <label @click="selectedPricingDuration = 'one-time'" :class="[selectedPricingDuration === 'one-time' ? 'bg:blue fg:white' : 'fg:gray-40  bg:blue/.1:hover']" class="cursor:pointer rounded px:10 py:4">
                         <input type="radio" name="frequency" value="one-time" class="sr-only">
                         <span>One-time</span>
-                    </label>
+                    </label> -->
                 </fieldset>
             </div>
 
