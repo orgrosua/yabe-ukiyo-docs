@@ -796,7 +796,7 @@ const COMMUNITY_TEMPLATES = [
     },
     {
         name: 'Frames',
-        url: 'https://getframes.io/',
+        url: 'https://getframes.io/ref/5/',
         icon: 'assets/landing/templates-frames.svg',
     },
     {
