@@ -562,7 +562,7 @@ const pupRiveCanvas = ref(null);
 const isMobileMenuOpen = ref(false);
 
 const happyCustomers = ref(0);
-const activeSites = ref(0);
+const activeSites = ref(300);
 const totalDownloads = ref(300);
 
 const wp_v10 = ref({
