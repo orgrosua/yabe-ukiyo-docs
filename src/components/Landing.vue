@@ -245,6 +245,45 @@
             </div>
         </div>
 
+        <!-- Community Templates -->
+        <div id="community-templates" class="block-community-templates max-w:xl flex flex:column my:60 mx:20 mx:30@sm mx:40@md mx:auto@xl">
+
+            <h2 class="mb:22 f:36 font:semibold text:center">Community Templates <i class="fa-solid fa-rectangle-history-circle-user fg:blue-30"></i></h2>
+            <div class="flex text:center justify-content:center">
+                <p class="max-w:60%@md f:18 lh:1.5">
+                    The community templates for Bricks that can be easily connected with Yabe Ukiyo.
+                    <br>
+                    <a href="/en/license/remote" class="text:underline">Learn how to connect it here</a>.
+                </p>
+            </div>
+
+            <div class="community-templates__wall w:full bg:gold-95 my:60 p:20 p:30@sm p:40@md r:8 ">
+
+                <div class="community-templates__grids flex flex-grow:1">
+                    <div class="w:full">
+                        <div class="p:20 h:full w:full r:8 justify-items:center align-items:center grid-cols:1 grid-cols:3@sm grid-cols:4@xl grid-auto-flow:dense bg:white">
+                            <a v-for="communityTemplate in COMMUNITY_TEMPLATES" :href="communityTemplate.url" target="_blank" class="flex w:full align-items:center justify-content:center bg:gray-95:hover">
+                                <div class="p:20 w:full h:full">
+                                    <div class="flex flex:column align-items:center text:center">
+                                        <img :src="communityTemplate.icon" :alt="communityTemplate.name" class="w:auto max-w:full max-h:128">
+                                        <div class="pt:10">
+                                            {{ communityTemplate.name }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt:30 text:center">
+                    <a href="https://rosua.org/support-portal" target="_blank" class="text:underline">
+                        Doesn't see your favorite community template? Let us know
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <!-- Feature Section -->
         <div id="features" class="block-features max-w:xl flex flex:column align-items:center my:60 mx:20 mx:30@sm mx:40@md mx:auto@xl">
             <div class="px:8 py:4 mb:8 r:8 bg:sky-95 fg:sky-55 text:center uppercase font:bold ls:2">Fully-featured</div>
@@ -321,43 +360,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Community Templates -->
-        <div id="community-templates" class="block-community-templates max-w:xl flex flex:column my:60 mx:20 mx:30@sm mx:40@md mx:auto@xl">
-
-            <h2 class="mb:22 f:36 font:semibold text:center">Community Templates <i class="fa-solid fa-rectangle-history-circle-user fg:blue-30"></i></h2>
-            <div class="flex text:center justify-content:center">
-                <p class="max-w:60%@md f:18 lh:1.5">
-                    The community templates for Bricks that can be easily connected with Yabe Ukiyo.
-                </p>
-            </div>
-
-            <div class="community-templates__wall w:full bg:gold-95 my:60 p:20 p:30@sm p:40@md r:8 ">
-
-                <div class="community-templates__grids flex flex-grow:1">
-                    <div class="w:full">
-                        <div class="p:20 h:full w:full r:8 justify-items:center align-items:center grid-cols:1 grid-cols:3@sm grid-cols:4@xl grid-auto-flow:dense bg:white">
-                            <a v-for="communityTemplate in COMMUNITY_TEMPLATES" :href="communityTemplate.url" target="_blank" class="flex w:full align-items:center justify-content:center bg:gray-95:hover">
-                                <div class="p:20 w:full h:full">
-                                    <div class="flex flex:column align-items:center text:center">
-                                        <img :src="communityTemplate.icon" :alt="communityTemplate.name" class="w:auto max-w:full max-h:128">
-                                        <div class="pt:10">
-                                            {{ communityTemplate.name }}
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt:30 text:center">
-                    <a href="https://rosua.org/support-portal" target="_blank" class="text:underline">
-                        Doesn't see your favorite community template? Let us know
-                    </a>
                 </div>
             </div>
         </div>
