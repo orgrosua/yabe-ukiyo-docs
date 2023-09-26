@@ -438,10 +438,10 @@
                         <input type="radio" name="frequency" value="annually" class="sr-only">
                         <span>Annually</span>
                     </label>
-                    <!-- <label @click="selectedPricingDuration = 'one-time'" :class="[selectedPricingDuration === 'one-time' ? 'bg:blue fg:white' : 'fg:gray-40  bg:blue/.1:hover']" class="cursor:pointer rounded px:10 py:4">
+                    <label @click="selectedPricingDuration = 'one-time'" :class="[selectedPricingDuration === 'one-time' ? 'bg:blue fg:white' : 'fg:gray-40  bg:blue/.1:hover']" class="cursor:pointer rounded px:10 py:4">
                         <input type="radio" name="frequency" value="one-time" class="sr-only">
                         <span>One-time</span>
-                    </label> -->
+                    </label>
                 </fieldset>
             </div>
 
