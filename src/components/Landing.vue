@@ -60,6 +60,14 @@
         <div class="block-intro w:full max-w:xl mx:auto flex flex:column text:center my:60">
             <!-- Headline -->
             <div class="headline px:20 mx:30 my:30 lh:1.4">
+
+                <!-- represent the ownership for WordPress.org submission  -->
+                <div class="flex flex:column align-items:center mb:16">
+                    <div class="px:16 py:6 r:8 bg:sky-95 fg:sky-55 b:1|solid|sky-65 text:center font:medium ls:2 lh:1.5">
+                        The <span class="ls:1 font:bold">WP's Plugin repository</span> submission is being reviewed under the account <a href="https://profiles.wordpress.org/rosua/"><span class="ls:1 font:bold">@rosua</span></a>
+                    </div>
+                </div>
+
                 <h1 class="title mt:55 f:30 f:38@sm f:48@md font:bold fg:#222">The <span class="bg:grass-90 r:8 px:6">Remote Templates Manager</span> Plugin for Bricks</h1>
                 <p class="my:16 mx:65@md f:22 fg:gray-40">
                     Manage or sell multiple Bricks template libraries with seamless integration into WordPress e-commerce platforms.
