@@ -62,11 +62,11 @@
             <div class="headline px:20 mx:30 my:30 lh:1.4">
 
                 <!-- represent the ownership for WordPress.org submission  -->
-                <div class="flex flex:column align-items:center mb:16">
+                <!-- <div class="flex flex:column align-items:center mb:16">
                     <div class="px:16 py:6 r:8 bg:sky-95 fg:sky-55 b:1|solid|sky-65 text:center font:medium ls:2 lh:1.5">
                         The <span class="ls:1 font:bold">WP's Plugin repository</span> submission is being reviewed under the account <a href="https://profiles.wordpress.org/rosua/"><span class="ls:1 font:bold">@rosua</span></a>
                     </div>
-                </div>
+                </div> -->
 
                 <h1 class="title mt:55 f:30 f:38@sm f:48@md font:bold fg:#222">The <span class="bg:grass-90 r:8 px:6">Remote Templates Manager</span> Plugin for Bricks</h1>
                 <p class="my:16 mx:65@md f:22 fg:gray-40">
@@ -429,11 +429,11 @@
                 </div>
             </div> -->
 
-            <div class="flex flex:column align-items:center mb:16">
+            <!-- <div class="flex flex:column align-items:center mb:16">
                 <div class="px:16 py:6 r:8 bg:crimson-95 fg:crimson-55 b:1|solid|crimson-65 text:center font:medium ls:2 lh:1.5">
                     <i class="fa-solid fa-gift fg:crimson pr:6"></i> <span class="ls:1 font:bold">Black Friday & Cyber Monday</span> offer: <code class="font:extrabold bg:white">LTD plan</code>, until <span class="ls:1 font:bold">Nov 28</span>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Title -->
             <h2 class="mb:22 f:36 font:semibold text:center">Pricing</h2>
@@ -576,15 +576,15 @@ const pupRiveCanvas = ref(null);
 const isMobileMenuOpen = ref(false);
 
 const happyCustomers = ref(0);
-const activeSites = ref(300);
-const totalDownloads = ref(300);
+const activeSites = ref(0);
+const totalDownloads = ref(0);
 
 const wp_v10 = ref({
-    downloaded: 1,
+    downloaded: 0,
 });
 const wp_v12 = ref({
-    version: '1.0.2',
-    active_installs: 1,
+    version: '1.0.0',
+    active_installs: 0,
     donate_link: 'https://ko-fi.com/Q5Q75XSF7',
     download_link: 'https://www.dropbox.com/scl/fi/xz8odazclmb09xvlhu689/yabe-ukiyo-1.0.2.zip?rlkey=w1ftubne7nrpmppjq6fvqmlm1&dl=1',
 });
@@ -889,36 +889,36 @@ onBeforeMount(() => {
             console.log(err);
         });
 
-    // fetch('https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&slug=yabe-ukiyo')
-    //     .then(response => {
-    //         if (!response.ok) {
-    //             throw new Error("Not 2xx response", { cause: response });
-    //         }
+    fetch('https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&slug=yabe-ukiyo')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Not 2xx response", { cause: response });
+            }
 
-    //         return response.json();
-    //     })
-    //     .then(data => {
-    //         wp_v12.value = data;
-    //         activeSites.value += wp_v12.value.active_installs;
-    //     })
-    //     .catch(err => {
-    //         console.log(err);
-    //     });
-    // fetch('https://api.wordpress.org/plugins/info/1.0/yabe-ukiyo.json')
-    //     .then(response => {
-    //         if (!response.ok) {
-    //             throw new Error("Not 2xx response", { cause: response });
-    //         }
+            return response.json();
+        })
+        .then(data => {
+            wp_v12.value = data;
+            activeSites.value += wp_v12.value.active_installs;
+        })
+        .catch(err => {
+            console.log(err);
+        });
+    fetch('https://api.wordpress.org/plugins/info/1.0/yabe-ukiyo.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Not 2xx response", { cause: response });
+            }
 
-    //         return response.json();
-    //     })
-    //     .then(data => {
-    //         wp_v10.value = data;
-    //         totalDownloads.value += wp_v10.value.downloaded;
-    //     })
-    //     .catch(err => {
-    //         console.log(err);
-    //     });
+            return response.json();
+        })
+        .then(data => {
+            wp_v10.value = data;
+            totalDownloads.value += wp_v10.value.downloaded;
+        })
+        .catch(err => {
+            console.log(err);
+        });
 });
 
 onMounted(() => {
