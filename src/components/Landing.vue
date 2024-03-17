@@ -265,11 +265,11 @@
                 </p>
             </div>
 
-            <div class="community-templates__wall w:full bg:gold-95 my:60 p:20 p:30@sm p:40@md r:8 ">
+            <div class="community-templates__wall w:full my:60 p:20 p:30@sm p:40@md r:8 ">
 
                 <div class="community-templates__grids flex flex-grow:1">
                     <div class="w:full">
-                        <div class="p:20 h:full w:full r:8 justify-items:center align-items:center grid-cols:1 grid-cols:3@sm grid-cols:4@xl grid-auto-flow:dense bg:white">
+                        <div class="p:20 h:full w:full r:8 justify-items:center align-items:center grid-cols:1 grid-cols:5@sm grid-cols:6@xl grid-auto-flow:dense bg:white">
                             <a v-for="communityTemplate in COMMUNITY_TEMPLATES" :href="communityTemplate.url" target="_blank" class="flex w:full align-items:center justify-content:center bg:gray-95:hover">
                                 <div class="p:20 w:full h:full">
                                     <div class="flex flex:column align-items:center text:center">
