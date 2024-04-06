@@ -1,0 +1,94 @@
+---
+title: Centralized-able e-commerce
+description: 'Single e-commerce setup for multiple remote template libraries'
+i18nReady: false
+---
+
+Yabe Ukiyo allows you to create a centralized e-commerce setup for multiple remote template libraries. This means you can sell template libraries from a single website, while the actual template libraries are hosted on different websites.
+
+:::caution[Limited functionality]
+This feature is in its early stages, is not yet fully implemented, and only works with Easy Digital Downloads.
+:::
+
+There are two main components to this feature:
+- **Managed Site**: The site that hosts the actual template libraries.
+- **Central Site**: The site that sells the template libraries and connects to the managed sites.
+
+## Managed Site
+
+The managed site is the site that hosts the actual template libraries. To make a site as a managed site, you need to install the **Yabe Ukiyo** plugin and connect it to the central site.
+
+### Make the current site as a managed site
+
+#### Step 1: Enable the access
+
+To enable the access, go to **Bricks → Yabe Ukiyo**. Switch to the **Settings → Central Management** tab and tick the **Open Access** checkbox.
+
+<a data-fslightbox href="/tutorial/e-commerce/centralized/2.png">
+![](/tutorial/e-commerce/centralized/2.png)
+</a>
+
+#### Step 2: Generate secret key
+
+The access is protected by a secret key. To generate a secret key, click the **Generate Key** button.
+
+<a data-fslightbox href="/tutorial/e-commerce/centralized/3.png">
+![](/tutorial/e-commerce/centralized/3.png)
+</a>
+
+#### Step 3: Save the settings
+
+Don't forget to save the settings.
+
+<a data-fslightbox href="/tutorial/e-commerce/centralized/4.png">
+![](/tutorial/e-commerce/centralized/4.png)
+</a>
+
+#### Step 4: Copy the Token
+
+Token is a code that you need to copy and paste into the central site. Click the **Copy Token** button to copy the token to the clipboard.
+
+<a data-fslightbox href="/tutorial/e-commerce/centralized/5.png">
+![](/tutorial/e-commerce/centralized/5.png)
+</a>
+
+
+## Central Site
+
+The central site is the site that host e-commerce platform and connects to multiple managed sites.
+
+### Connecting a managed site
+
+#### Step 1: Add a managed site
+
+To add a managed site, go to **Bricks → Yabe Ukiyo**. Switch to the **Settings → Central Management** tab and click the **Add New** button.
+
+<a data-fslightbox href="/tutorial/e-commerce/centralized/1.png">
+![](/tutorial/e-commerce/centralized/1.png)
+</a>
+
+#### Step 2: Paste the Token
+
+Paste the token that you copied from the managed site by clicking the **Paste Token** button.
+
+<a data-fslightbox href="/tutorial/e-commerce/centralized/6.png">
+![](/tutorial/e-commerce/centralized/6.png)
+</a>
+
+#### Step 3: Save
+
+Don't forget to save.
+
+### Configuring the product
+
+Please follow the [Easy Digital Downloads](/docs/e-commerce/easy-digital-downloads/) documentation to configure the product.
+
+Finally, set the **Site** field to the managed site that host the actual template library.
+
+<a data-fslightbox href="/tutorial/e-commerce/centralized/7.png">
+![](/tutorial/e-commerce/centralized/7.png)
+</a>
+
+Then click the **Publish** or **Update** button.
+
+And that's it! Now you have a centralized e-commerce setup for multiple remote template libraries.

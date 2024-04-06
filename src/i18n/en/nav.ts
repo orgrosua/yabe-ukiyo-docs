@@ -19,5 +19,6 @@ export default [
 	{ text: 'E-commerce', header: true, type: 'learn', key: 'e-commerce' },
 	{ text: 'WooCommerce', slug: 'e-commerce/woocommerce', key: 'e-commerce/woocommerce' },
 	{ text: 'Easy Digital Downloads', slug: 'e-commerce/easy-digital-downloads', key: 'e-commerce/easy-digital-downloads' },
+	{ text: 'Centralized E-commerce', slug: 'e-commerce/centralized', key: 'e-commerce/centralized' },
 
 ] as const;
